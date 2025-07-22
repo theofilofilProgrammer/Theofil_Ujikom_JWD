@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Dipindahkan ke awal head -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | BAPPEDA</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Gaya tambahan untuk halaman login */
+        body {
+            background-color: #f8f9fa;
+        }
+        .login-container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container login-container">
+        <h2 class="text-center mb-4">Login</h2>
+        <form action="index.html" method="POST">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Sign In</button>
+            <p class="text-center mt-3">Belum punya akun? <a href="register.php">Daftar di sini</a></p>
+        </form>
+    </div>
+</body>
+</html>
